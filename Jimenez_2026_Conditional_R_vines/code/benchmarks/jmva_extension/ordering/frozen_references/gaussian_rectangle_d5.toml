@@ -1,0 +1,15 @@
+conditioning_dimension = 3
+target_met = true
+method = "deterministic_hcubature_reduced_integrand"
+runtime_s = 1.013461708
+uncertainty = 2.522332435296678e-11
+estimate = 0.12616033132518825
+allocations = 45
+case_id = "gaussian_rectangle_d5"
+N = 0
+split_half_z = 0.0
+uncertainty_kind = "hcubature_error_estimate"
+bytes = 1866560
+seed = 0
+R = 0
+d = 5

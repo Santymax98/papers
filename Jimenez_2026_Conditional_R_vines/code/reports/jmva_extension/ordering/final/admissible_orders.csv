@@ -1,0 +1,13 @@
+case_id,order_index,order,terminal_a,terminal_b,conditioning,interior
+gaussian_rectangle_d5,1,2-3-4,1,5,2-3-4,true
+gaussian_rectangle_d5,2,3-2-4,1,5,2-3-4,true
+gaussian_rectangle_d5,3,3-4-2,1,5,2-3-4,true
+gaussian_rectangle_d5,4,4-3-2,1,5,2-3-4,true
+gaussian_strong_d5,1,2-3-4,1,5,2-3-4,false
+gaussian_strong_d5,2,3-2-4,1,5,2-3-4,false
+gaussian_strong_d5,3,3-4-2,1,5,2-3-4,false
+gaussian_strong_d5,4,4-3-2,1,5,2-3-4,false
+genuine_rvine_d5,1,2-3-4,1,5,2-3-4,false
+genuine_rvine_d5,2,2-4-3,1,5,2-3-4,false
+genuine_rvine_d5,3,3-2-4,1,5,2-3-4,false
+genuine_rvine_d5,4,4-2-3,1,5,2-3-4,false

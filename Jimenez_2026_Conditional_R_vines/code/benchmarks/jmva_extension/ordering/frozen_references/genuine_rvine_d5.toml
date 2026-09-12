@@ -1,0 +1,15 @@
+conditioning_dimension = 3
+target_met = true
+method = "deterministic_hcubature_reduced_integrand"
+runtime_s = 7.363559166
+uncertainty = 3.126607787872418e-11
+estimate = 0.15633547880472826
+allocations = 9036253
+case_id = "genuine_rvine_d5"
+N = 0
+split_half_z = 0.0
+uncertainty_kind = "hcubature_error_estimate"
+bytes = 384875312
+seed = 0
+R = 0
+d = 5

@@ -1,0 +1,24 @@
+[deps]
+AdditionalDistributions = "6655a985-646a-4595-ab89-59c8a6085518"
+Copulas = "ae264745-0b69-425e-9d9d-cf662c5eec93"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+QuasiMonteCarlo = "8a4e6c94-4038-4cdc-81c3-7e6ffdb2a71b"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+VineCopulas = "58f8e485-d1fe-48aa-8792-3d6ba0b7fb45"
+
+[sources]
+VineCopulas = {path = "../../vendor/VineCopulas"}
+
+[compat]
+AdditionalDistributions = "=0.3.0"
+Copulas = "=0.1.40"
+Distributions = "=0.25.127"
+QuasiMonteCarlo = "=0.3.11"
+StatsFuns = "=1.5.2"
+VineCopulas = "0.1"
+julia = "1.12"
