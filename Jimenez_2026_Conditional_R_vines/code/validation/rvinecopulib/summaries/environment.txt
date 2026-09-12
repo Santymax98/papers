@@ -1,0 +1,13 @@
+created_at: 2026-08-30 15:41:41 UTC
+R: R version 4.5.3 (2026-03-11)
+platform: aarch64-apple-darwin20
+rvinecopulib: 0.7.3.1.0
+cores: 1
+reps: 30
+n_mc_budgets: 256,1024,4096,16384,65536
+base_seed: 90210
+RNGkind: Mersenne-Twister,Inversion,Rejection
+OMP_NUM_THREADS: 1
+OPENBLAS_NUM_THREADS: 1
+VECLIB_MAXIMUM_THREADS: 1
+RCPP_PARALLEL_NUM_THREADS: 1

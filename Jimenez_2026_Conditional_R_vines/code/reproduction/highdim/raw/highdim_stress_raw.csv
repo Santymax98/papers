@@ -1,0 +1,2 @@
+case_id,d,conditioning_dimension,rho,event,rule,N,rep,seed,method,estimate,reference,abs_error,generation_time_s,evaluation_time_s,total_runtime_s,generation_bytes,evaluation_bytes,generation_allocations,evaluation_allocations,hfunc_calls,hinv_calls,pair_cdf_calls
+equicorr_cdf_rho0_3_d300,300,298,0.3,cdf,sobol_owen,256,1,300840752,reduced_conditional,0.6883662408130368,0.689495918914106,0.0011296781010692314,0.199228708,19.544111958,19.743340665999998,93417472,17897936,206580,362833,34138880,11328768,256

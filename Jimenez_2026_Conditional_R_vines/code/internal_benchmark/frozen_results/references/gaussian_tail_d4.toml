@@ -1,0 +1,15 @@
+conditioning_dimension = 2
+target_met = true
+method = "deterministic_hcubature_reduced_integrand"
+runtime_s = 0.082426708
+uncertainty = 1.3195915354498886e-11
+estimate = 0.06598721228775145
+allocations = 40
+case_id = "gaussian_tail_d4"
+N = 0
+split_half_z = 0.0
+uncertainty_kind = "hcubature_error_estimate"
+bytes = 307232
+seed = 0
+R = 0
+d = 4

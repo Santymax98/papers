@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620">
+<rect width="100%" height="100%" fill="white"/>
+<text x="460.0" y="28" text-anchor="middle" font-family="Helvetica" font-size="18">Phase 3: RMSE versus total runtime</text>
+<line x1="82" y1="538" x2="896" y2="538" stroke="black"/>
+<line x1="82" y1="48" x2="82" y2="538" stroke="black"/>
+<text x="460.0" y="595" text-anchor="middle" font-family="Helvetica" font-size="14">log10(total runtime seconds)</text>
+<text x="22" y="310.0" transform="rotate(-90 22 310.0)" text-anchor="middle" font-family="Helvetica" font-size="14">log10(RMSE)</text>
+<circle cx="125.60714285714283" cy="74.25" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>gaussian_moderate_d5 iid_mc current_indicator</title></circle>
+<circle cx="240.7098646744503" cy="103.71620036481437" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>gaussian_moderate_d5 iid_mc current_indicator</title></circle>
+<circle cx="358.30367705354047" cy="129.2862441613879" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>gaussian_moderate_d5 iid_mc current_indicator</title></circle>
+<circle cx="473.2232750036935" cy="154.36324647889285" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>gaussian_moderate_d5 iid_mc current_indicator</title></circle>
+<circle cx="589.9997219769028" cy="183.1247027467054" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>gaussian_moderate_d5 iid_mc current_indicator</title></circle>
+<circle cx="200.7779786659845" cy="109.32028173136973" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>gaussian_moderate_d5 randomized_halton current_indicator</title></circle>
+<circle cx="293.1070908122808" cy="136.2678436143005" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>gaussian_moderate_d5 randomized_halton current_indicator</title></circle>
+<circle cx="392.72321893765167" cy="172.810736711216" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>gaussian_moderate_d5 randomized_halton current_indicator</title></circle>
+<circle cx="498.69348601351817" cy="205.17361785235596" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>gaussian_moderate_d5 randomized_halton current_indicator</title></circle>
+<circle cx="616.0190587769208" cy="241.12041152196917" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>gaussian_moderate_d5 randomized_halton current_indicator</title></circle>
+<circle cx="129.25552974967056" cy="111.25296118691853" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>gaussian_moderate_d5 shifted_lattice current_indicator</title></circle>
+<circle cx="241.1077290920617" cy="145.2060747147857" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>gaussian_moderate_d5 shifted_lattice current_indicator</title></circle>
+<circle cx="353.41001167546517" cy="177.81050198985878" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>gaussian_moderate_d5 shifted_lattice current_indicator</title></circle>
+<circle cx="466.97441172821596" cy="188.8197055547958" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>gaussian_moderate_d5 shifted_lattice current_indicator</title></circle>
+<circle cx="580.8416216811431" cy="194.17838184487272" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>gaussian_moderate_d5 shifted_lattice current_indicator</title></circle>
+<circle cx="243.36686484137383" cy="118.4750533787456" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>gaussian_moderate_d5 sobol_owen current_indicator</title></circle>
+<circle cx="356.49124682649494" cy="140.14569955465504" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>gaussian_moderate_d5 sobol_owen current_indicator</title></circle>
+<circle cx="475.26805837601387" cy="180.64112990264346" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>gaussian_moderate_d5 sobol_owen current_indicator</title></circle>
+<circle cx="594.8835503317551" cy="211.23015401903672" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>gaussian_moderate_d5 sobol_owen current_indicator</title></circle>
+<circle cx="748.6305213702516" cy="254.66878720588727" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>gaussian_moderate_d5 sobol_owen current_indicator</title></circle>
+<circle cx="478.6145203692175" cy="75.24067004652528" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>gaussian_strong_d20 iid_mc current_indicator</title></circle>
+<circle cx="599.1749584676608" cy="103.61723564683547" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>gaussian_strong_d20 iid_mc current_indicator</title></circle>
+<circle cx="717.7675854821615" cy="131.61847385527477" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>gaussian_strong_d20 iid_mc current_indicator</title></circle>
+<circle cx="833.814544961552" cy="153.67645964374583" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>gaussian_strong_d20 iid_mc current_indicator</title></circle>
+<circle cx="484.2089965808235" cy="111.95253832265348" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>gaussian_strong_d20 randomized_halton current_indicator</title></circle>
+<circle cx="601.8340522304584" cy="136.05891921678943" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>gaussian_strong_d20 randomized_halton current_indicator</title></circle>
+<circle cx="718.2467116974766" cy="167.79879473340577" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>gaussian_strong_d20 randomized_halton current_indicator</title></circle>
+<circle cx="833.5896160235853" cy="187.77832415485943" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>gaussian_strong_d20 randomized_halton current_indicator</title></circle>
+<circle cx="479.4882500739984" cy="103.40039323832815" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>gaussian_strong_d20 shifted_lattice current_indicator</title></circle>
+<circle cx="598.8823986721088" cy="134.55393181183177" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>gaussian_strong_d20 shifted_lattice current_indicator</title></circle>
+<circle cx="716.4939208091137" cy="158.9700638372533" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>gaussian_strong_d20 shifted_lattice current_indicator</title></circle>
+<circle cx="832.6708808314996" cy="194.69349466199094" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>gaussian_strong_d20 shifted_lattice current_indicator</title></circle>
+<circle cx="493.40824326115717" cy="111.26186100882097" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>gaussian_strong_d20 sobol_owen current_indicator</title></circle>
+<circle cx="612.1583363375917" cy="141.16744649375755" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>gaussian_strong_d20 sobol_owen current_indicator</title></circle>
+<circle cx="729.8102944952165" cy="166.61938795831452" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>gaussian_strong_d20 sobol_owen current_indicator</title></circle>
+<circle cx="852.3928571428573" cy="193.72619944775886" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>gaussian_strong_d20 sobol_owen current_indicator</title></circle>
+<circle cx="177.19093299904154" cy="87.62582381378331" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>genuine_rvine_d5 iid_mc current_indicator</title></circle>
+<circle cx="286.4245916134518" cy="114.79852568053099" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>genuine_rvine_d5 iid_mc current_indicator</title></circle>
+<circle cx="400.6523927896221" cy="131.0803436386538" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>genuine_rvine_d5 iid_mc current_indicator</title></circle>
+<circle cx="516.9579116787672" cy="159.26758024054027" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>genuine_rvine_d5 iid_mc current_indicator</title></circle>
+<circle cx="634.8297108840277" cy="187.28489466971308" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>genuine_rvine_d5 iid_mc current_indicator</title></circle>
+<circle cx="223.9611233396402" cy="113.09917431724631" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>genuine_rvine_d5 randomized_halton current_indicator</title></circle>
+<circle cx="321.4697767620539" cy="135.23715235263626" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>genuine_rvine_d5 randomized_halton current_indicator</title></circle>
+<circle cx="428.12097225019687" cy="170.83172118086162" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>genuine_rvine_d5 randomized_halton current_indicator</title></circle>
+<circle cx="537.0568433899437" cy="207.82641983226534" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>genuine_rvine_d5 randomized_halton current_indicator</title></circle>
+<circle cx="677.6450116364639" cy="237.41727747095445" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>genuine_rvine_d5 randomized_halton current_indicator</title></circle>
+<circle cx="178.18864766776846" cy="118.72135068499222" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>genuine_rvine_d5 shifted_lattice current_indicator</title></circle>
+<circle cx="288.64567387531986" cy="145.2025156480371" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>genuine_rvine_d5 shifted_lattice current_indicator</title></circle>
+<circle cx="402.269841366463" cy="159.31164240580972" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>genuine_rvine_d5 shifted_lattice current_indicator</title></circle>
+<circle cx="517.6774550123655" cy="161.77685946457052" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>genuine_rvine_d5 shifted_lattice current_indicator</title></circle>
+<circle cx="638.4092080970021" cy="200.18173759300407" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>genuine_rvine_d5 shifted_lattice current_indicator</title></circle>
+<circle cx="259.94373232975147" cy="110.49500670634836" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>genuine_rvine_d5 sobol_owen current_indicator</title></circle>
+<circle cx="371.0339004901998" cy="144.41563112055263" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>genuine_rvine_d5 sobol_owen current_indicator</title></circle>
+<circle cx="489.9460277570484" cy="177.0543578743219" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>genuine_rvine_d5 sobol_owen current_indicator</title></circle>
+<circle cx="609.2939103165061" cy="207.509814078747" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>genuine_rvine_d5 sobol_owen current_indicator</title></circle>
+<circle cx="760.4223123146078" cy="234.0966394063878" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>genuine_rvine_d5 sobol_owen current_indicator</title></circle>
+<circle cx="470.2984367334288" cy="102.40336136300067" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>mixed_d10 iid_mc current_indicator</title></circle>
+<circle cx="588.0878581440894" cy="119.59916406851278" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>mixed_d10 iid_mc current_indicator</title></circle>
+<circle cx="704.2980781319819" cy="143.38792597908633" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>mixed_d10 iid_mc current_indicator</title></circle>
+<circle cx="819.777140980462" cy="186.9038676689504" r="4" fill="white" stroke="#666666" stroke-width="1.4"><title>mixed_d10 iid_mc current_indicator</title></circle>
+<circle cx="473.65423204502196" cy="129.5697116414147" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>mixed_d10 randomized_halton current_indicator</title></circle>
+<circle cx="590.5039517716252" cy="156.0650322942708" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>mixed_d10 randomized_halton current_indicator</title></circle>
+<circle cx="705.142456410374" cy="191.4919297684948" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>mixed_d10 randomized_halton current_indicator</title></circle>
+<circle cx="821.3888006792495" cy="217.05186297588546" r="4" fill="white" stroke="#0072B2" stroke-width="1.4"><title>mixed_d10 randomized_halton current_indicator</title></circle>
+<circle cx="470.8721135623717" cy="115.93982358721814" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>mixed_d10 shifted_lattice current_indicator</title></circle>
+<circle cx="585.7671088171845" cy="155.0560093920261" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>mixed_d10 shifted_lattice current_indicator</title></circle>
+<circle cx="703.9894630283541" cy="182.94751366394388" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>mixed_d10 shifted_lattice current_indicator</title></circle>
+<circle cx="820.1428825143543" cy="211.48680714427366" r="4" fill="white" stroke="#D55E00" stroke-width="1.4"><title>mixed_d10 shifted_lattice current_indicator</title></circle>
+<circle cx="478.6774622070786" cy="134.93021392192344" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>mixed_d10 sobol_owen current_indicator</title></circle>
+<circle cx="596.5105291059937" cy="159.87316971754882" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>mixed_d10 sobol_owen current_indicator</title></circle>
+<circle cx="712.4972206429737" cy="186.24888933722025" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>mixed_d10 sobol_owen current_indicator</title></circle>
+<circle cx="836.6665113451146" cy="216.07864014132286" r="4" fill="white" stroke="#009E73" stroke-width="1.4"><title>mixed_d10 sobol_owen current_indicator</title></circle>
+<circle cx="168.56288794364895" cy="128.65701773037523" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>gaussian_moderate_d5 iid_mc reduced_conditional</title></circle>
+<circle cx="283.11406401516865" cy="152.8029646305722" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>gaussian_moderate_d5 iid_mc reduced_conditional</title></circle>
+<circle cx="398.4382684884748" cy="189.24660668822804" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>gaussian_moderate_d5 iid_mc reduced_conditional</title></circle>
+<circle cx="514.6037708753877" cy="206.7625603007467" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>gaussian_moderate_d5 iid_mc reduced_conditional</title></circle>
+<circle cx="630.2776034240196" cy="233.82743551495838" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>gaussian_moderate_d5 iid_mc reduced_conditional</title></circle>
+<circle cx="222.34379604098817" cy="214.92767622760812" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>gaussian_moderate_d5 randomized_halton reduced_conditional</title></circle>
+<circle cx="320.95366321987166" cy="265.1654242820381" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>gaussian_moderate_d5 randomized_halton reduced_conditional</title></circle>
+<circle cx="423.8767739677961" cy="315.20740977876676" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>gaussian_moderate_d5 randomized_halton reduced_conditional</title></circle>
+<circle cx="536.4371668821906" cy="359.56822085824376" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>gaussian_moderate_d5 randomized_halton reduced_conditional</title></circle>
+<circle cx="652.6767291722588" cy="412.081017184272" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>gaussian_moderate_d5 randomized_halton reduced_conditional</title></circle>
+<circle cx="172.06131305982396" cy="215.90461111013548" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>gaussian_moderate_d5 shifted_lattice reduced_conditional</title></circle>
+<circle cx="286.2390373592209" cy="263.8534809629259" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>gaussian_moderate_d5 shifted_lattice reduced_conditional</title></circle>
+<circle cx="401.0291827275063" cy="303.2187693971366" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>gaussian_moderate_d5 shifted_lattice reduced_conditional</title></circle>
+<circle cx="516.6530603667836" cy="323.92191907615677" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>gaussian_moderate_d5 shifted_lattice reduced_conditional</title></circle>
+<circle cx="633.4981734336482" cy="319.07289413250373" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>gaussian_moderate_d5 shifted_lattice reduced_conditional</title></circle>
+<circle cx="256.628794803661" cy="279.5431977727" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>gaussian_moderate_d5 sobol_owen reduced_conditional</title></circle>
+<circle cx="370.46925369747294" cy="335.6437366365185" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>gaussian_moderate_d5 sobol_owen reduced_conditional</title></circle>
+<circle cx="489.3894153189919" cy="409.4727414629083" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>gaussian_moderate_d5 sobol_owen reduced_conditional</title></circle>
+<circle cx="609.0863979898483" cy="459.8991781943296" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>gaussian_moderate_d5 sobol_owen reduced_conditional</title></circle>
+<circle cx="757.8306960711868" cy="511.75" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>gaussian_moderate_d5 sobol_owen reduced_conditional</title></circle>
+<circle cx="474.79279821951525" cy="91.38783366641383" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>gaussian_strong_d20 iid_mc reduced_conditional</title></circle>
+<circle cx="590.5572314488275" cy="117.92864385936872" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>gaussian_strong_d20 iid_mc reduced_conditional</title></circle>
+<circle cx="706.4434736625933" cy="149.80156971232617" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>gaussian_strong_d20 iid_mc reduced_conditional</title></circle>
+<circle cx="822.4491270980621" cy="170.35978133116322" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>gaussian_strong_d20 iid_mc reduced_conditional</title></circle>
+<circle cx="479.24692944960395" cy="144.2043699319322" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>gaussian_strong_d20 randomized_halton reduced_conditional</title></circle>
+<circle cx="594.0845873604713" cy="175.9040326647161" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>gaussian_strong_d20 randomized_halton reduced_conditional</title></circle>
+<circle cx="709.0368037564366" cy="196.23176946242006" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>gaussian_strong_d20 randomized_halton reduced_conditional</title></circle>
+<circle cx="824.7839897419312" cy="229.93006152278326" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>gaussian_strong_d20 randomized_halton reduced_conditional</title></circle>
+<circle cx="475.52084600958506" cy="144.14450826627268" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>gaussian_strong_d20 shifted_lattice reduced_conditional</title></circle>
+<circle cx="591.2442381087612" cy="164.67766405523253" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>gaussian_strong_d20 shifted_lattice reduced_conditional</title></circle>
+<circle cx="706.9045365995042" cy="192.41022542638103" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>gaussian_strong_d20 shifted_lattice reduced_conditional</title></circle>
+<circle cx="823.3793893647712" cy="222.68821703247215" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>gaussian_strong_d20 shifted_lattice reduced_conditional</title></circle>
+<circle cx="491.09457188381356" cy="151.94791453990666" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>gaussian_strong_d20 sobol_owen reduced_conditional</title></circle>
+<circle cx="606.5509669558321" cy="174.59018795608745" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>gaussian_strong_d20 sobol_owen reduced_conditional</title></circle>
+<circle cx="722.4636617495553" cy="206.11990789749296" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>gaussian_strong_d20 sobol_owen reduced_conditional</title></circle>
+<circle cx="846.3229941974143" cy="235.8126658079306" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>gaussian_strong_d20 sobol_owen reduced_conditional</title></circle>
+<circle cx="180.91057046513424" cy="130.73141589013505" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>genuine_rvine_d5 iid_mc reduced_conditional</title></circle>
+<circle cx="295.3580164894886" cy="151.20758639390402" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>genuine_rvine_d5 iid_mc reduced_conditional</title></circle>
+<circle cx="411.01908963389" cy="188.53376595229605" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>genuine_rvine_d5 iid_mc reduced_conditional</title></circle>
+<circle cx="526.1210596469066" cy="203.86759429434284" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>genuine_rvine_d5 iid_mc reduced_conditional</title></circle>
+<circle cx="642.1816708049489" cy="233.42696559383722" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>genuine_rvine_d5 iid_mc reduced_conditional</title></circle>
+<circle cx="220.3297527636868" cy="216.16767964802182" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>genuine_rvine_d5 randomized_halton reduced_conditional</title></circle>
+<circle cx="326.57003884081195" cy="268.1199212705806" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>genuine_rvine_d5 randomized_halton reduced_conditional</title></circle>
+<circle cx="432.081659294653" cy="321.9836998529072" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>genuine_rvine_d5 randomized_halton reduced_conditional</title></circle>
+<circle cx="546.0437008230606" cy="366.4089371069141" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>genuine_rvine_d5 randomized_halton reduced_conditional</title></circle>
+<circle cx="667.182511901603" cy="421.79738646056165" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>genuine_rvine_d5 randomized_halton reduced_conditional</title></circle>
+<circle cx="183.6755736853093" cy="208.88001038432327" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>genuine_rvine_d5 shifted_lattice reduced_conditional</title></circle>
+<circle cx="297.62336357711774" cy="264.73404452684537" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>genuine_rvine_d5 shifted_lattice reduced_conditional</title></circle>
+<circle cx="413.1463795298378" cy="288.8281183398324" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>genuine_rvine_d5 shifted_lattice reduced_conditional</title></circle>
+<circle cx="528.7684112914521" cy="314.5130409709667" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>genuine_rvine_d5 shifted_lattice reduced_conditional</title></circle>
+<circle cx="645.1446494339023" cy="308.6249605477723" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>genuine_rvine_d5 shifted_lattice reduced_conditional</title></circle>
+<circle cx="259.95444317741624" cy="276.18501265849136" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>genuine_rvine_d5 sobol_owen reduced_conditional</title></circle>
+<circle cx="374.9122557633746" cy="323.04770752425395" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>genuine_rvine_d5 sobol_owen reduced_conditional</title></circle>
+<circle cx="494.14493656259253" cy="385.25153090459196" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>genuine_rvine_d5 sobol_owen reduced_conditional</title></circle>
+<circle cx="615.4060398962756" cy="442.2005259927893" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>genuine_rvine_d5 sobol_owen reduced_conditional</title></circle>
+<circle cx="761.2778950606378" cy="495.4920735657315" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>genuine_rvine_d5 sobol_owen reduced_conditional</title></circle>
+<circle cx="440.4085582171391" cy="166.79267804812855" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>mixed_d10 iid_mc reduced_conditional</title></circle>
+<circle cx="554.9374253469617" cy="191.10535391822208" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>mixed_d10 iid_mc reduced_conditional</title></circle>
+<circle cx="670.8631068310713" cy="212.34536182667205" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>mixed_d10 iid_mc reduced_conditional</title></circle>
+<circle cx="786.7401061419731" cy="247.36811404189154" r="3" fill="#666666" stroke="#666666" stroke-width="1.4"><title>mixed_d10 iid_mc reduced_conditional</title></circle>
+<circle cx="442.8447657917467" cy="223.26736089386458" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>mixed_d10 randomized_halton reduced_conditional</title></circle>
+<circle cx="557.1160381313913" cy="261.7148285623033" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>mixed_d10 randomized_halton reduced_conditional</title></circle>
+<circle cx="672.4930215402894" cy="285.69742668845106" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>mixed_d10 randomized_halton reduced_conditional</title></circle>
+<circle cx="788.2412954708883" cy="327.0270628882722" r="3" fill="#0072B2" stroke="#0072B2" stroke-width="1.4"><title>mixed_d10 randomized_halton reduced_conditional</title></circle>
+<circle cx="439.4196790286279" cy="211.428493837007" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>mixed_d10 shifted_lattice reduced_conditional</title></circle>
+<circle cx="555.1476092213026" cy="251.96947911113216" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>mixed_d10 shifted_lattice reduced_conditional</title></circle>
+<circle cx="670.8935049930923" cy="281.9119473013738" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>mixed_d10 shifted_lattice reduced_conditional</title></circle>
+<circle cx="787.2593361082116" cy="289.3958820703075" r="3" fill="#D55E00" stroke="#D55E00" stroke-width="1.4"><title>mixed_d10 shifted_lattice reduced_conditional</title></circle>
+<circle cx="451.1672362752775" cy="231.8488635568986" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>mixed_d10 sobol_owen reduced_conditional</title></circle>
+<circle cx="567.5928027882984" cy="275.45926924011155" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>mixed_d10 sobol_owen reduced_conditional</title></circle>
+<circle cx="683.5278038180784" cy="311.34017441727923" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>mixed_d10 sobol_owen reduced_conditional</title></circle>
+<circle cx="802.5974330366398" cy="335.15729784485393" r="3" fill="#009E73" stroke="#009E73" stroke-width="1.4"><title>mixed_d10 sobol_owen reduced_conditional</title></circle>
+<circle cx="670" cy="92" r="4" fill="#666666" stroke="#666666"/>
+<text x="684" y="97" font-family="Helvetica" font-size="12">iid_mc</text>
+<circle cx="670" cy="114" r="4" fill="#0072B2" stroke="#0072B2"/>
+<text x="684" y="119" font-family="Helvetica" font-size="12">randomized_halton</text>
+<circle cx="670" cy="136" r="4" fill="#D55E00" stroke="#D55E00"/>
+<text x="684" y="141" font-family="Helvetica" font-size="12">shifted_lattice</text>
+<circle cx="670" cy="158" r="4" fill="#009E73" stroke="#009E73"/>
+<text x="684" y="163" font-family="Helvetica" font-size="12">sobol_owen</text>
+<circle cx="670" cy="200" r="4" fill="white" stroke="black"/>
+<text x="684" y="205" font-family="Helvetica" font-size="12">current indicator</text>
+<circle cx="670" cy="222" r="4" fill="black" stroke="black"/>
+<text x="684" y="227" font-family="Helvetica" font-size="12">reduced conditional</text>
+</svg>

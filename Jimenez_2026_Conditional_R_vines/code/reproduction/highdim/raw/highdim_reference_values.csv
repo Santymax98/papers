@@ -1,0 +1,21 @@
+case_id,d,rho,event,lower,upper,reference,quadrature_error,reference_method
+equicorr_cdf_rho0_3_d20,20,0.3,cdf,0.0,0.95,0.5547860119171046,3.5929406125194754e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_interior_rho0_3_d20,20,0.3,interior,0.025,0.975,0.45975543587489426,3.071545954748812e-12,1D equicorrelated Gaussian mixture quadrature
+equicorr_cdf_rho0_8_d20,20,0.8,cdf,0.0,0.95,0.809503011492795,4.2508966463342126e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_interior_rho0_8_d20,20,0.8,interior,0.025,0.975,0.7759598758853421,7.803194564363334e-12,1D equicorrelated Gaussian mixture quadrature
+equicorr_cdf_rho0_3_d50,50,0.3,cdf,0.0,0.98,0.6084183319983416,3.598551737623369e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_interior_rho0_3_d50,50,0.3,interior,0.01,0.99,0.5116750445854734,7.39714185226879e-12,1D equicorrelated Gaussian mixture quadrature
+equicorr_cdf_rho0_8_d50,50,0.8,cdf,0.0,0.98,0.8730755954751246,6.596502409880379e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_interior_rho0_8_d50,50,0.8,interior,0.01,0.99,0.8492864833011963,2.65377562620501e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_cdf_rho0_3_d100,100,0.3,cdf,0.0,0.99,0.6427949737650774,4.077727898518858e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_interior_rho0_3_d100,100,0.3,interior,0.005,0.995,0.5480453084287159,1.6556843284565497e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_cdf_rho0_8_d100,100,0.8,cdf,0.0,0.99,0.9059961864131446,3.8779242722023806e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_interior_rho0_8_d100,100,0.8,interior,0.005,0.995,0.8877957674278216,2.7670090440941764e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_cdf_rho0_3_d300,300,0.3,cdf,0.0,0.9966666666666667,0.689495918914106,5.4577431461290624e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_interior_rho0_3_d300,300,0.3,interior,0.0016666666666666668,0.9983333333333333,0.6008820987692265,3.314836597611465e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_cdf_rho0_8_d300,300,0.8,cdf,0.0,0.9966666666666667,0.9411256339250436,7.357134414850446e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_interior_rho0_8_d300,300,0.8,interior,0.0016666666666666668,0.9983333333333333,0.9293009770386355,8.035919938934309e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_cdf_rho0_3_d500,500,0.3,cdf,0.0,0.998,0.7085926770754333,6.30495085022461e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_interior_rho0_3_d500,500,0.3,interior,0.001,0.999,0.6234439367305504,5.3930536614184694e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_cdf_rho0_8_d500,500,0.8,cdf,0.0,0.998,0.9525195536099376,5.669516662004731e-11,1D equicorrelated Gaussian mixture quadrature
+equicorr_interior_rho0_8_d500,500,0.8,interior,0.001,0.999,0.9428587505720003,6.573086365442898e-11,1D equicorrelated Gaussian mixture quadrature

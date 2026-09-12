@@ -1,0 +1,17 @@
+conditioning_dimension = 18
+target_met = true
+method = "independent_reduced_rqmc_reference"
+runtime_s = 2494.015114666
+split_mean_1 = 0.014494846706307353
+uncertainty = 8.953346125747518e-8
+estimate = 0.01449478119015392
+allocations = 67191045
+case_id = "gaussian_tail_d20"
+N = 1048576
+split_half_z = 0.7261499692971335
+uncertainty_kind = "between_scramble_standard_error"
+split_mean_2 = 0.014494715674000487
+seed = 22875309
+bytes = 710982993184
+R = 32
+d = 20

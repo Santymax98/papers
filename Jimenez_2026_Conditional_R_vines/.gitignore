@@ -1,0 +1,5 @@
+output/*
+!output/README.md
+code/data/
+code/benchmarks/jmva_extension/permutation_entropy/data/*.zip
+code/reproduction/gaussian_specialized/rebuilt_gaussian_specialized_comparison.tex

@@ -1,0 +1,13 @@
+case_id,rule,N,method,remaining_reps,projected_seconds,threshold_seconds,reason
+mixed_d10,iid_mc,65536,current_indicator,30,189.25534752,180.0,projected cell runtime exceeds threshold
+mixed_d10,randomized_halton,65536,current_indicator,30,192.93817998,180.0,projected cell runtime exceeds threshold
+mixed_d10,sobol_owen,65536,current_indicator,30,231.61232754000002,180.0,projected cell runtime exceeds threshold
+mixed_d10,shifted_lattice,65536,current_indicator,30,190.08489498,180.0,projected cell runtime exceeds threshold
+mixed_d10,iid_mc,65536,current_indicator,30,189.25534752,180.0,projected cell runtime exceeds threshold
+mixed_d10,randomized_halton,65536,current_indicator,30,192.93817998,180.0,projected cell runtime exceeds threshold
+mixed_d10,sobol_owen,65536,current_indicator,30,231.61232754000002,180.0,projected cell runtime exceeds threshold
+mixed_d10,shifted_lattice,65536,current_indicator,30,190.08489498,180.0,projected cell runtime exceeds threshold
+mixed_d10,iid_mc,65536,current_indicator,30,189.25534752,180.0,projected cell runtime exceeds threshold
+mixed_d10,randomized_halton,65536,current_indicator,30,192.93817998,180.0,projected cell runtime exceeds threshold
+mixed_d10,sobol_owen,65536,current_indicator,30,231.61232754000002,180.0,projected cell runtime exceeds threshold
+mixed_d10,shifted_lattice,65536,current_indicator,30,190.08489498,180.0,projected cell runtime exceeds threshold

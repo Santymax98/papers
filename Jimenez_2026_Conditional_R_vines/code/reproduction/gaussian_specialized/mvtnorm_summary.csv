@@ -1,0 +1,5 @@
+"case_id","d","event","dependence","method","N_or_maxpts","replicates","reference","rmse","median_abs_error","median_runtime_s","median_internal_error","tolerance","successful_statuses"
+"gaussian_moderate_d4",4,"CDF","moderate","mvtnorm_genzbretz",4096,30,0.241935728379802,3.16236688097269e-05,2.05403577096669e-05,0.001,8.81615946022795e-05,1e-06,0
+"gaussian_rectangle_d5",5,"interior","moderate","mvtnorm_genzbretz",4096,30,0.126160331325188,6.88006998714666e-06,4.51249042031365e-06,0.001,1.96381407077858e-05,1e-06,0
+"gaussian_strong_d4",4,"CDF","strong","mvtnorm_genzbretz",4096,30,0.588251634836868,0.00010990018692774,6.72786009118798e-05,0.00100000000000011,0.000282040854444743,1e-06,0
+"gaussian_strong_d5",5,"CDF","strong","mvtnorm_genzbretz",4096,30,0.574665774993617,0.000379218699330314,0.000336587690498102,0.00099999999999989,0.00115206258025049,1e-06,0

@@ -1,0 +1,215 @@
+# C-vine pair-copula constructions.
+# Convention for edges[k][i]: pair-copula C_{root, child | previous roots},
+# where root = order[k] and child = order[k+i]. The copula coordinates are (root, child).
+
+"""Structure-only description of a C-vine order and active truncation level."""
+struct CVineStructure{p,q} <: AbstractVineStructure{p}
+    order::NTuple{p,Int}
+
+    function CVineStructure{p,q}(order::NTuple{p,Int}) where {p,q}
+        1 <= q <= p - 1 || throw(ArgumentError("trunc must be in 1:$(p-1)"))
+        sort(collect(order)) == collect(1:p) ||
+            throw(ArgumentError("order must be a permutation of 1:$p"))
+        return new{p,q}(order)
+    end
+end
+
+function CVineStructure(order::_OrderInput; trunc::Int=length(order)-1)
+    p = _check_order(order)
+    1 <= trunc <= p-1 || throw(ArgumentError("trunc must be in 1:$(p-1)"))
+    return CVineStructure{p,trunc}(Tuple(Int.(order)))
+end
+
+"""
+    CVineCopula(order, edges; trunc=length(order)-1)
+    CVineCopula(structure::CVineStructure, edges)
+
+Construct a canonical vine copula from a variable `order` and a triangular
+collection of bivariate pair-copulas. The entry `edges[k][i]` represents the
+pair-copula between the root `order[k]` and the child `order[k+i]`, conditional
+on the previous roots `order[1:k-1]`.
+
+Matrices of observations follow the package convention `p × n`: rows are
+dimensions and columns are observations.
+
+# Example
+
+```julia
+C12 = GaussianCopula([1.0 0.5; 0.5 1.0])
+C13 = ClaytonCopula(2, 2.0)
+C23_1 = FrankCopula(2, 3.0)
+cv = CVineCopula([1, 2, 3], [[C12, C13], [C23_1]])
+```
+"""
+struct CVineCopula{p,q,E} <: AbstractVineCopula{p}
+    order::NTuple{p,Int}
+    edges::E
+    trunc::Int
+end
+
+function CVineCopula(; order, paircopulas, trunc = length(order) - 1)
+    ord = collect(Int, order)
+    pcs = [collect(level) for level in paircopulas]
+    return CVineCopula(ord, pcs; trunc = trunc)
+end
+
+function CVineCopula(order::_OrderInput, edges; trunc::Int=length(order)-1)
+    p = _check_order(order)
+    1 <= trunc <= p-1 || throw(ArgumentError("trunc must be in 1:$(p-1)"))
+    E = _normalize_edges(edges, p, trunc)
+    return CVineCopula{p,trunc,typeof(E)}(Tuple(Int.(order)), E, trunc)
+end
+
+function CVineCopula(structure::CVineStructure{p,q}, edges) where {p,q}
+    E = _normalize_edges(edges, p, q)
+    return CVineCopula{p,q,typeof(E)}(structure.order, E, q)
+end
+
+function CVineCopula(edges; order=nothing, trunc::Int=length(edges))
+    p = length(edges) + 1
+    order === nothing && (order = collect(1:p))
+    return CVineCopula(order, edges; trunc=trunc)
+end
+
+"""
+    order(vine)
+
+Return the variable order used by a vine copula.
+"""
+order(vc::CVineCopula) = vc.order
+order(st::CVineStructure) = st.order
+
+"""Return a `CVineStructure` describing the C-vine ordering and truncation."""
+structure(vc::CVineCopula{p,q}) where {p,q} = CVineStructure{p,q}(vc.order)
+
+"""
+    edges(vine)
+
+Return the triangular array of bivariate pair-copulas used by a vine copula.
+Tree `k` is stored in `edges(vine)[k]`.
+"""
+edges(vc::CVineCopula) = vc.edges
+
+"""
+    truncation(vine)
+
+Return the number of active trees in the vine. A full `p`-dimensional vine has
+truncation level `p - 1`.
+"""
+truncation(vc::CVineCopula) = vc.trunc
+truncation(::CVineStructure{p,q}) where {p,q} = q
+
+function truncate(st::CVineStructure{p}, level::Integer) where {p}
+    q = _check_truncate_level(level, p, truncation(st))
+    return CVineStructure{p,q}(st.order)
+end
+
+function truncate(vc::CVineCopula{p}, level::Integer) where {p}
+    st = truncate(structure(vc), level)
+    return CVineCopula(st, vc.edges[1:truncation(st)])
+end
+
+Base.show(io::IO, vc::CVineCopula{p}) where {p} = print(io, "CVineCopula(p=$p, trunc=$(vc.trunc))")
+Base.show(io::IO, st::CVineStructure{p}) where {p} = print(io, "CVineStructure(p=$p, trunc=$(truncation(st)))")
+
+function _logpdf_internal(vc::CVineCopula{p}, u::AbstractVector{<:Real}) where {p}
+    _check_vector_dim(p, u)
+    return _logpdf_internal(vc, reshape(u, p, 1))[1]
+end
+
+function _logpdf_internal(vc::CVineCopula{p}, U::AbstractMatrix{<:Real}) where {p}
+    X = _as_pxn(p, U)
+    n = size(X,2)
+    W = Matrix{Float64}(undef, p, n)
+    @inbounds for j in 1:p
+        @views W[j,:] .= _clp.(X[vc.order[j],:])
+    end
+    ll = zeros(Float64, n)
+    buf = Vector{Float64}(undef, 2)
+    @inbounds for k in 1:vc.trunc
+        root = k
+        propagate = k < vc.trunc
+        for i in 1:(p-k)
+            child = k + i
+            C = vc.edges[k][i]
+            rootvals = @view W[root,:]
+            childvals = @view W[child,:]
+            if propagate
+                # The batched helper is also a function barrier: mixed-family
+                # edge containers pay dynamic dispatch once per edge, not once
+                # per observation. `childvals` may safely alias the h₂ output.
+                _pair_logpdf_h2_add!(ll, childvals, C, rootvals, childvals, buf)
+            else
+                # No later tree consumes conditionals from the last active tree.
+                _pair_logpdf_add!(ll, C, rootvals, childvals, buf)
+            end
+        end
+    end
+    return ll
+end
+
+function _rosenblatt_internal!(out::AbstractMatrix{<:Real}, vc::CVineCopula{p}, U::AbstractMatrix{<:Real}) where {p}
+    X = _as_pxn(p, U)
+    n = size(X,2)
+    W = Matrix{Float64}(undef, p, n)
+    @inbounds for j in 1:p
+        @views W[j,:] .= _clp.(X[vc.order[j],:])
+    end
+    @inbounds for k in 1:vc.trunc
+        root = k
+        for i in 1:(p-k)
+            child = k + i
+            C = vc.edges[k][i]
+            for col in 1:n
+                W[child,col] = hfunc2(C, W[root,col], W[child,col])
+            end
+        end
+    end
+    invord = _invperm_tuple(vc.order)
+    @inbounds for label in 1:p
+        @views out[label,:] .= W[invord[label],:]
+    end
+    return out
+end
+
+function _inverse_rosenblatt_internal!(out::AbstractMatrix{<:Real}, vc::CVineCopula{p}, Z::AbstractMatrix{<:Real}) where {p}
+    Zx = _as_pxn(p, Z)
+    n = size(Zx,2)
+    W = Matrix{Float64}(undef, p, n)
+    @inbounds for j in 1:p
+        @views W[j,:] .= _clp.(Zx[vc.order[j],:])
+    end
+    X = Matrix{Float64}(undef, p, n)
+    @inbounds X[1,:] .= W[1,:]
+    @inbounds for i in 2:p
+        @views X[i,:] .= W[i,:]
+        # Invert from most conditioned edge down to the unconditional edge.
+        for k in min(i-1, vc.trunc):-1:1
+            C = vc.edges[k][i-k]
+            for col in 1:n
+                # W[k,col] is the Rosenblatt coordinate z_k = u_{k | 1:(k-1)}.
+                X[i,col] = hinv2(C, X[i,col], W[k,col])
+            end
+        end
+    end
+    invord = _invperm_tuple(vc.order)
+    @inbounds for label in 1:p
+        @views out[label,:] .= X[invord[label],:]
+    end
+    return out
+end
+
+function _cvine_edge_description(vc::CVineCopula{p}, k::Int, i::Int) where {p}
+    root = vc.order[k]
+    child = vc.order[k+i]
+    D = Tuple(vc.order[1:k-1])
+    return VineEdge((root, child), D, vc.edges[k][i], k, i)
+end
+
+function vine_edges(vc::CVineCopula)
+    out = VineEdge[]
+    for k in 1:vc.trunc, i in 1:length(vc.edges[k])
+        push!(out, _cvine_edge_description(vc, k, i))
+    end
+    return out
+end

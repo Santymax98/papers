@@ -1,0 +1,17 @@
+conditioning_dimension = 8
+target_met = false
+method = "independent_reduced_rqmc_reference"
+runtime_s = 1539.651527958
+split_mean_1 = 0.06639470275901273
+uncertainty = 1.0671238708687628e-7
+estimate = 0.06639476233248344
+allocations = 134251484
+case_id = "mixed_d10"
+N = 1048576
+split_half_z = 0.5519655481515291
+uncertainty_kind = "between_scramble_standard_error"
+split_mean_2 = 0.06639482190595414
+seed = 26875309
+bytes = 309080338896
+R = 32
+d = 10
